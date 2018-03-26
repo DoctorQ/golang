@@ -2,7 +2,7 @@
 package main
 
 import "fmt"
-
+var g int
 func main() {
     /*声明局部变量*/    
     var a,b,c int
@@ -10,5 +10,7 @@ func main() {
     a = 10
     b = 20
     c = a + b
+    g = a + b
     fmt.Printf("结果:a=%d,b=%d and c=%d\n",a,b,c)
+    fmt.Printf("结果:a=%d,b=%d and g=%d\n",a,b,g)
 }
